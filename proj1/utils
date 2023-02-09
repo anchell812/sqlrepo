@@ -1,0 +1,30 @@
+const logger = require('../../a.kabanova/ProjectSQL/logger/logger');
+
+(function tableForm() {
+
+x = [{"a": 1, "b": "xxx", "c": "abc"},
+        {"a": 2, "b": "xxxxxxx", "c": "abc"},
+        {"a": 3, "b": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzz", "c": "abc"}]
+
+widths = {"a": 0, "b": 0, "c": 0}
+
+x.forEach(e => {
+    for (const key in e) {
+        if (e, key) {
+            const element = String(e[key]);
+            
+        l = element.length
+        if (l > widths[key])
+            widths[key] = l;
+        }
+    }            
+     
+} ); 
+
+//logger.info(widths)
+console.log(widths)
+
+
+})();
+
+//module.exports = { tableForm }
